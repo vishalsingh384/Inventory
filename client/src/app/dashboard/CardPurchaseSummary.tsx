@@ -63,7 +63,7 @@ const CardPurchaseSummary = () => {
             </div>
 
             {/* CHART */}
-            <ResponsiveContainer width="100%" height={200} className="p-2">
+            <ResponsiveContainer width="100%" height={150} className="p-2">
               <AreaChart
                 data={purchaseData}
                 margin={{ top: 0, right: 0, left: -50, bottom: 45 }}

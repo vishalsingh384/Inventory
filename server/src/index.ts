@@ -6,6 +6,7 @@ import bodyParser from "body-parser";
 import cors from "cors";
 import dashboardRoutes from "./routes/dashboardRoutes";
 import productRoutes from "./routes/productRoutes";
+import userRoutes from "./routes/userRoutes";
 
 /* ROUTE IMPORTS */
 
@@ -25,6 +26,7 @@ app.use(cors());
 /* ROUTES */
 app.use("/dashboard",dashboardRoutes);
 app.use("/products",productRoutes);
+app.use("/users",userRoutes);
 app.use("/*",(req,res)=>{
     res.status(500).json({message:"Unknown route"});
 })
